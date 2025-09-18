@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Silver Owl - The Dental Lounge</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="Silver Owl Logo">
+        <span>Silver Owl - The Dental Lounge</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="appointments.html">Appointments</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+    <h1>CONTACT US</h1>
+    <p>We’d love to hear from you. Reach out today!</p>
+    </div>
+    <!-- Dots for slideshow navigation -->
+    <div class="dots"></div>
+  </section>
+
+  <!-- Contact Info & Form -->
+  <section class="contact-section">
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <p><strong>Address:</strong> Silver Owl - The Dental Lounge, 123 Smile Street, Yelahanka, Bengaluru</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> info@silverowldental.com</p>
+      <p><strong>Working Hours:</strong> Mon - Sat: 9:00 AM - 7:00 PM</p>
+    </div>
+
+<div class="contact-form">
+  <h2>Send Us a Message</h2>
+  <form action="https://formsubmit.co/silverowldental@gmail.com" method="POST">
+
+    <!-- Name -->
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <!-- Email -->
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Message -->
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <!-- Hidden Fields -->
+    <input type="hidden" name="_subject" value="New Contact Form Submission!">
+    <input type="hidden" name="_next" value="https://silverowldental.github.io/silverowldental/thank-you.html">
+    <input type="text" name="_honey" style="display:none"> <!-- anti-spam bot trap -->
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</div>
+
+  </section>
+
+  <!-- Google Map -->
+  <section class="map">
+    <h2>Find Us Here</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.123456789!2d77.5946!3d13.0279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17c1234567%3A0xabcdef123456789!2sYelahanka%2C%20Bengaluru!5e0!3m2!1sen!2sin!4v0000000000000" 
+      width="100%" 
+      height="350" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-about">
+        <h3>Silver Owl - The Dental Lounge</h3>
+        <p>Delivering excellence in dental care with modern facilities and expert doctors.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="appointments.html">Book Appointment</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: info.silverowldental@gmail.com</p>
+        <p>Phone: +91 9746 471099</p>
+        <p>Address: Shop No.1 at 218, 4th Main Road, UAS – 3 B Extension, Shivana Halli, Yelahanka Old Town, Bangalore-560064</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Silver Owl - The Dental Lounge. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
