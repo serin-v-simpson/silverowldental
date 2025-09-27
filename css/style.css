@@ -126,7 +126,7 @@ header {
 }
 
 .hero h5 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 6rem;
   margin-bottom: 20px;
   font-weight: 600;
@@ -768,4 +768,5 @@ footer {
   color: #555;
   font-size: 1rem;
 }
+
 
