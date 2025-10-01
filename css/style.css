@@ -89,7 +89,7 @@ header {
 
 /* Individual Banner Images */
 .hero.banner1 {
-  background-image: url('../images/banner1.jpg');
+  background-image: url('../images/banner1.jpeg');
 }
 .hero.banner2 {
   background-image: url('../images/banner2.jpeg');
@@ -768,5 +768,6 @@ footer {
   color: #555;
   font-size: 1rem;
 }
+
 
 
