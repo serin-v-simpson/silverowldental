@@ -38,10 +38,22 @@ header {
   margin-right: 10px;
 }
 
-.logo span {
+.logo-text {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  line-height: 1.1;       /* reduce gap between lines */
+}
+
+.logo-text .main {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.5rem;   /* bigger text */
   font-weight: bold;
+}
+
+.logo-text .sub {
+  color: #fff;
+  font-size: 0.85rem;  /* smaller subtitle */
+  font-weight: 400;
 }
 
 /* Navbar links */
@@ -768,6 +780,7 @@ footer {
   color: #555;
   font-size: 1rem;
 }
+
 
 
 
