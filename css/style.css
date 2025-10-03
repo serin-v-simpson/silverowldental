@@ -376,6 +376,19 @@ h2 {
   margin-bottom: 40px;
 }
 
+.gallery-category {
+  margin-bottom: 50px;
+}
+
+.gallery-category h3 {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  text-align: left;   /* or center if you prefer */
+  color: #004466;
+  border-left: 5px solid #0099cc;
+  padding-left: 10px;
+}
+
 /* Responsive grid with auto-fit masonry style */
 .gallery-grid {
   display: grid;
@@ -820,6 +833,7 @@ footer {
     margin: 10px 0;
   }
 }
+
 
 
 
