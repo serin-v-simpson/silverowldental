@@ -834,6 +834,31 @@ footer {
   }
 }
 
+.btn {
+  display: inline-block;
+  padding: 14px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #0099cc, #006699);
+  border: none;
+  border-radius: 50px; /* pill shape */
+  box-shadow: 0 6px 15px rgba(0, 153, 204, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #00bbee, #004466);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 153, 204, 0.6);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 153, 204, 0.4);
+}
+
 
 
 
