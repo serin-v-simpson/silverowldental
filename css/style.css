@@ -782,6 +782,45 @@ footer {
   font-size: 1rem;
 }
 
+/* ====== Mobile Navbar Toggle Button ====== */
+.menu-toggle {
+  display: none; /* hidden by default */
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Animate toggle (optional) */
+.menu-toggle.active {
+  color: #FFD700; /* turns golden when active */
+}
+
+/* ====== Responsive Navbar ====== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* show only on mobile */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    display: none; /* hidden by default */
+    background: #004466;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex; /* show when toggled */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
 
 
 
