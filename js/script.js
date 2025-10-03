@@ -1,14 +1,11 @@
 // ====== Mobile Navbar Toggle ======
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector(".nav-links");
-  const toggleBtn = document.createElement("button");
-  toggleBtn.innerText = "☰";
-  toggleBtn.classList.add("nav-toggle");
-
-  document.querySelector(".navbar").insertBefore(toggleBtn, nav);
+  const toggleBtn = document.querySelector(".menu-toggle");
 
   toggleBtn.addEventListener("click", () => {
-    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+    nav.classList.toggle("active");
+    toggleBtn.classList.toggle("active"); // animate button if needed
   });
 
   // ====== Hero Banner Slideshow (CSS-based) ======
@@ -31,22 +28,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const dots = dotsContainer.querySelectorAll('.dot');
 
     function showSlide(index) {
-      hero.classList.remove(...classes); // remove any old banner class
-      hero.classList.add(classes[index]); // apply new banner class
+      hero.classList.remove(...classes);
+      hero.classList.add(classes[index]);
       dots.forEach((d, i) => d.classList.toggle('active', i === index));
       currentIndex = index;
     }
 
-    // Auto-slide every 5s
     setInterval(() => {
       let nextIndex = (currentIndex + 1) % classes.length;
       showSlide(nextIndex);
     }, 5000);
 
-    // Init first slide
     showSlide(0);
   }
 });
+
 
 // ====== Contact Form Validation ======
 const contactForm = document.querySelector(".contact-form form");
@@ -98,3 +94,4 @@ document.querySelectorAll(".gallery-item img").forEach(img => {
     });
   });
 });
+
