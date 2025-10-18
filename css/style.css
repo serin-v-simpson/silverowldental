@@ -716,16 +716,37 @@ footer {
 
 /* Bottom strip */
 .footer-bottom {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
   padding-top: 10px;
   border-top: 1px solid rgba(255,255,255,0.3);
+  font-size: 0.9rem;
 }
 
 .footer-bottom p {
   margin: 0;
-  font-size: 0.9rem;
 }
+
+.footer-social a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.footer-social a i {
+  margin-right: 6px;
+  font-size: 16px;
+}
+
+.footer-social a:hover {
+  color: #00aced;
+}
+
 
 /* ====== About Section ====== */
 .about-section {
@@ -1010,6 +1031,7 @@ footer {
   transform: translateY(0);
   box-shadow: 0 4px 10px rgba(0, 153, 204, 0.4);
 }
+
 
 
 
