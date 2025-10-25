@@ -164,9 +164,58 @@
   }
 })();
 </script>
+
+<!-- 🦉 Silver Owl – Offer Bubble -->
+<div class="offer-bubble" id="offerBubble">🦉 Get Coupon</div>
+
+<!-- Popup Form -->
+<div class="offer-popup" id="offerPopup">
+  <div class="popup-content">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <h2>Claim Coupon</h2>
+    <form id="couponForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <select id="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      <input type="number" id="age" placeholder="Age" required min="1" max="120">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required pattern="[0-9]{10}">
+      <textarea id="address" placeholder="Address" required></textarea>
+      <button type="submit">Generate Coupon</button>
+    </form>
+  </div>
+</div>
+
+<!-- Coupon Display -->
+<div class="coupon-container" id="couponContainer" style="display:none;">
+  <div class="coupon-card" id="couponCard">
+    <span class="coupon-close-btn" id="closeCoupon">&times;</span>
+    <img id="couponLogo" src="images/logo1.png" alt="Silver Owl Logo" class="coupon-logo">
+    <h3>Silver Owl - The Dental Lounge</h3>
+    <hr>
+    <p id="couponName"></p>
+    <p id="couponEmail"></p>
+    <p id="couponAgeGender"></p>
+    <h4 id="couponOffer"></h4>
+    <p class="coupon-code" id="couponCode"></p>
+    <p class="coupon-validity" id="couponValidity"></p>
+  </div>
+  <button id="downloadCoupon">Download Coupon</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script type="module" src="js/coupon.js"></script>
+
+<!-- 🦉 Silver Owl – Offer Bubble END-->
+
   
 </body>
 </html>
+
 
 
 
