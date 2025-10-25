@@ -1032,6 +1032,198 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 153, 204, 0.4);
 }
 
+/* 🦉 Silver Owl – Offer Bubble */
+.offer-bubble {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #004466;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+.offer-bubble:hover {
+  transform: scale(1.1);
+}
+
+/* Popup Form */
+
+.offer-popup {
+  display: none;              /* keep hidden initially */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;    /* center horizontally */
+  align-items: center;        /* center vertically */
+  z-index: 9999;
+}
+
+
+.popup-content {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  width: 340px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  position: relative;
+  border-top: 6px solid #a970ff;
+  animation: slideUp 0.3s ease;
+}
+.popup-content h2 {
+  text-align: center;
+  color: #6c3483;
+  font-family: 'Poppins', sans-serif;
+}
+.popup-content form {
+  display: flex;
+  flex-direction: column;
+}
+.popup-content input, select, textarea {
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Poppins', sans-serif;
+}
+.popup-content button {
+  background: #a970ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+.popup-content button:hover {
+  background: #8e44ad;
+}
+
+/* Close Button (Popup) */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 20px;
+  color: #a970ff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.close-btn:hover {
+  color: #8e44ad;
+}
+
+/* Coupon Display */
+.coupon-container {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1001;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.coupon-card {
+  background: #e6f4ff; /* light blue background */
+  border: 3px solid #007bff; /* blue border */
+  border-radius: 12px;
+  width: 320px;
+  margin: 10px auto;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+.coupon-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.coupon-card h3 {
+  color: #004080;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.coupon-card hr {
+  border: 0;
+  border-top: 2px dashed #66b2ff;
+  margin: 10px 0;
+}
+
+.coupon-card h4 {
+  color: #0056b3;
+  margin: 10px 0;
+}
+
+.coupon-code {
+  background: #d9ecff;
+  border: 1px solid #99ccff;
+  color: #004080;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Validity Text */
+.coupon-validity {
+  color: #004466;
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 8px;
+}
+
+#downloadCoupon {
+  background: linear-gradient(135deg, #a970ff, #cbb4ff);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+#downloadCoupon:hover {
+  background: #8e44ad;
+}
+
+/* Close Button for Coupon */
+.coupon-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 20px;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.coupon-close-btn:hover {
+  color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes slideUp {
+  from {transform: translateY(20px); opacity: 0;}
+  to {transform: translateY(0); opacity: 1;}
+}
+
+/* 🦉 Silver Owl – Offer Bubble - End */
 
 
 
